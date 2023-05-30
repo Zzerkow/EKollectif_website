@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import heartIcon from './Img/heart-Icon.svg';
 import picmain1 from './Img/PicMain1.png';
 import picmain2 from './Img/PicMain2.png';
@@ -6,6 +5,10 @@ import picmain3 from './Img/PicMain3.png';
 import picmain4 from './Img/PicMain4.png';
 import actualityexemple from './Img/actuality-exemple.png';
 import arrowmore from './Img/arrowmore.png';
+import logovidjovi from './Img/logo-vidjovi.png';
+import logoncb from './Img/logo-ncb.png';
+import logonISFES from './Img/logo-ISFES.png';
+import logonchrysalide from './Img/logo-chrysalide.png';
 import './App.css';
 import './font.css';
 import './Fonction.js';
@@ -16,7 +19,13 @@ function App() {
   const ActualityPicture = actualityexemple;
   const Picture3 = picmain3;
   const Picture4 = picmain4;
-  const Picturedesc = 'lorem ipsum dolerean big mac'
+  const Picturedesc = 'lorem ipsum dolerean big mac';
+  const partner1 = { photo: logovidjovi, titre:'VIDJOVI "L\'enfant digne"', description :'Association française dont le siège est à Suze-la-Rousse, dont le but est de soutenir l\'éducation au Bénin et de prévenir l\'abandon et l\'exploitation des enfants.'};
+  const partner2 = { photo: logoncb, titre:'NOUVELLES CHANCES BENIN ONG', description :'L\'ONG ayant notamment pour mission la prise en charge d\'apprenants handicapés intellectuels en milieux scolaires nous intervenons auprès d\'elle lors des manifestations qu\'elle organise.Ce fut ainsi le cas lors des 7 SOCIAL DAYS 2022.'};
+  const partner3 = { photo: logonISFES, titre:'Institut Supérieur de Formation des Educateurs Spécialisés', description :'Par notre partenariat nous disposons d\'un local au sein de l\'établissement, ce qui nous permet d\'avoir un contact direct avec les futurs professionnels. Ces derniers ont accès au matériel dont dispose l\'association et peuvent participer aux divers groupes de travail et activités proposés par l\'association.'};
+  const partner4 = { photo: logonchrysalide, titre:'ONG la CHRYSALIDE Bénin', description :'Cette organisation à but non lucratif est spécialisée dans l\'accompagnement des enfants et jeunes handicapés intellectuels depuis 1998. Nous soutenons ses actions et réciproquement'};
+  const partnersline1 = {partner1 : partner1, partner2 : partner2};
+  const partnersline2 = {partner3 : partner3, partner4 : partner4};
 
   return (
     <body>
@@ -141,10 +150,24 @@ function App() {
 
         <div className='fifth-right-container'>
 
-
-          
+          <TitleEquipe/>
+          <p className='text-5-france-titre'>En France :</p>
+          <p className='text-5-france'> E’Kollectif est dirigée par la Présidente fondatrice qui est entourée d’une équipe administrative, et elle s’appuie sur l’aide de bénévoles.</p>
+          <p className='text-5-benin-titre'>Au Bénin :</p>
+          <p className='text-5-benin'> A Cotonou E’Kollectif dispose d’un local géré par deux responsables salariés de l’association. Tous deux éducateurs spécialisés leurs connaissances du terrain permettent d’intervenir concrètement dans la prise en charge des difficultés rencontrées tant par les familles que par les professionnels.</p>
           
         </div>
+
+      </div>
+
+      <div className='sixth-content-container'>
+
+        <div className='partner-container'>
+
+        <p className='title-text-6'>Nos <span className='green-color'>Partenaires</span>.</p>
+        <Partner2cards1line data={partnersline1}/>
+        <Partner2cards1linebis data={partnersline2}/>    
+        </div>            
 
       </div>
 
@@ -342,5 +365,63 @@ function PictureMainPage4(props) {
   );
 }
 
+function TitleEquipe(){
+  return(
+    
+    <p className='title-text-5'>Notre <span className='orange-color'>Equipe</span>.</p>
+
+  );
+}
+
+function Partner2byLine(props){
+  const { photo, titre, description } = props.data;
+  return(
+
+    
+
+    <div className='partner-card'>
+
+      <div className='partner-logo-title'>
+
+        <img src={photo}  className='partner-logo'/>
+        <p className='partner-title'>{titre}</p>
+
+      </div>
+
+      <p className='partner-desc'>{description}</p>
+
+    </div>    
+
+  );
+}
+
+
+function Partner2cards1line(props){
+  const {partner1, partner2} = props.data;
+  return(
+
+    <div className='partner-line'>
+      
+      <Partner2byLine data={partner1}/>
+      <Partner2byLine data={partner2}/>
+
+    </div>
+
+  );
+}
+
+function Partner2cards1linebis(props){
+  const {partner3, partner4} = props.data;
+  return(
+
+    <div className='partner-line'>
+      
+      <Partner2byLine data={partner3}/>
+      <Partner2byLine data={partner4}/>
+
+    </div>
+
+  );
+}
 
 export default App;
