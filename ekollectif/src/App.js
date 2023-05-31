@@ -1,4 +1,6 @@
-import heartIcon from './Img/heart-Icon.svg';
+
+/* import */
+
 import picmain1 from './Img/PicMain1.png';
 import picmain2 from './Img/PicMain2.png';
 import picmain3 from './Img/PicMain3.png';
@@ -13,8 +15,12 @@ import './App.css';
 import './font.css';
 import './Fonction.js';
 import Footer from './Component/Footer.js'
+import Navbar from './Component/Navbar.js'
 
 function App() {
+
+   {/* Constantes */}
+
   const Picture1 = picmain1;
   const Picture2 = picmain2;
   const ActualityPicture = actualityexemple;
@@ -29,26 +35,9 @@ function App() {
   const partnersline2 = {partner3 : partner3, partner4 : partner4};
 
   return (
-    <body>
+    <div>
 
-      <div className="Main-Container">
-
-        <div className="Container_Navbar">
-
-          <TitleWebSite/>          
-
-          <div className="Container_Onglets">      
-            <AboutusButton/>
-            <ActionButton/>
-            <ProjectButton/>
-            <ActualityButton/>
-            <EngagedButton/>
-            <DonationButton/> 
-          </div>
-
-        </div>  
-
-      </div>  
+      <Navbar/>
 
       {/* 1ère Partie de la page plus petite que les autres ducoup 990px de hauteur */}
 
@@ -173,74 +162,9 @@ function App() {
       </div>
 
       <Footer/>
-
-    </body>
-  ); 
-}
-
-
-function TitleWebSite(){
-  return(
-    <div className="Title_Navbar">
-            <h1>E'Kollectif</h1>
-            <p className="point_style">.</p>
+   
     </div>
-  );
-}
-
-function AboutusButton() {
-  return(
-    <button className='button-page'>
-      <h2 className='no-underline'>Nous Connaître</h2>
-    </button>
-
-  );
-}
-
-function ActionButton() {
-  return(
-    <button className='button-page'>
-      <h2 className='underline'>Nos Actions</h2>
-    </button>
-
-  );
-}
-
-function ProjectButton() {
-  return(
-    <button className='button-page'>
-      <h2 className='underline'>Nos Projets</h2>
-    </button>
-
-  );
-}
-
-function ActualityButton() {
-  return(
-    <button className='button-page'>
-      <h2 className='underline'>Actualités</h2>
-    </button>
-
-  );
-}
-
-function EngagedButton() {
-  return(
-    <button className='button-page'>
-      <h2 className='underline'>S'engager</h2>
-    </button>
-
-  );
-}
-
-function DonationButton() {
-  return (
-    <button className='button-donation'>
-      <img src={heartIcon} className="Icon-don" />
-      <p className="Title_Don">Faire un Don</p>  
-    </button>
-    
-  );
+  ); 
 }
 
 function MoreButton(){

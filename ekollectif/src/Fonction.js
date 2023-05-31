@@ -28,10 +28,12 @@ const Title_navbar = document.querySelectorAll('h2');
       var currentScrollPos = window.pageYOffset;
     
       if (prevScrollpos > currentScrollPos) {
-        document.querySelector(".Main-Container").classList.remove("hidden");
+        document.querySelector(".navbar-container").classList.remove("hidden");
       } else {
-        document.querySelector(".Main-Container").classList.add("hidden");
+        document.querySelector(".navbar-container").classList.add("hidden");
       }
     
       prevScrollpos = currentScrollPos;
     }; 
+
+    
