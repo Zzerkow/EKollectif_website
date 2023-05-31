@@ -12,6 +12,7 @@ import logonchrysalide from './Img/logo-chrysalide.png';
 import './App.css';
 import './font.css';
 import './Fonction.js';
+import Footer from './Component/Footer.js'
 
 function App() {
   const Picture1 = picmain1;
@@ -171,9 +172,12 @@ function App() {
 
       </div>
 
+      <Footer/>
+
     </body>
   ); 
 }
+
 
 function TitleWebSite(){
   return(
