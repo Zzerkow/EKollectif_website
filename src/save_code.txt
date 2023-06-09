@@ -1,0 +1,24 @@
+ /* CSS pour le design du soulignage noir de la nav-bar */
+    
+    .underline { /* Effet quand on passe la souris dessus */
+      position: relative;
+      display: inline-block;
+    }
+    
+    .underline.after {
+      content: '';
+      position: absolute;
+      bottom: -2px; /* Ajustez la valeur pour régler la position de la ligne */
+      left: 0;
+      width: 0;
+      height: 4px; /* Ajustez la valeur pour régler l'épaisseur de la ligne */
+      background-color: #000000; /* Couleur de la ligne */
+      border-radius: 3px; /* Ajustez la valeur pour régler le border-radius */
+      opacity: 0;
+      transition: width 0.2s ease, opacity 0.2s ease;
+    }
+
+    .underline.hover.after {
+      width: 100%;
+      opacity: 1;
+    }

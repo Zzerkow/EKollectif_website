@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .App {
   text-align: center;
 }
@@ -36,3 +37,704 @@
     transform: rotate(360deg);
   }
 }
+=======
+
+/*---------- CSS Design ----------*/
+body{
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;  
+  margin-left: auto;
+  margin-right: auto; 
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+                                  
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Main-Container{
+
+  width: 100%;
+  height: auto;
+  align-items: center;
+  
+}
+
+/* Common CSS */
+
+.pink-color{
+
+  color: #AD2A7A;
+
+}
+
+.yellow-color{
+
+  color: #FDE94C;
+
+}
+
+.green-color{
+
+  color: #48B063;
+
+}
+
+.blue-color{
+
+  color: #6394CF;
+
+}
+
+.orange-color{
+
+  color: #EC6837;
+
+}
+
+.picture-desc-white{
+
+  font-family: 'Poppins-Medium';
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  margin-top: 3px;
+
+}
+
+.picture-desc-black{
+
+  font-family: 'Poppins-Medium';
+  font-size: 14px;
+  color: black;
+  margin: 0;
+  margin-top: 3px;
+
+}
+
+.title-text{
+
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: 610px;
+  margin: 0;
+  margin-bottom: 41px;
+
+}
+
+.title-text-2{
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: 637px;
+  margin: 0;
+  margin-bottom: 41px;
+  color: white;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.title-text-3{
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: 596px;
+  margin: 0;
+  margin-bottom: 41px;
+  color: black;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.picture-container{
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-picture-container{
+
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+/* CSS Première Partie*/
+
+.first-Content-Container{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  justify-content: right;
+
+}
+
+.left-content-text{
+
+  width: 840px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+
+.text{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: 785px;
+  margin: 0;  
+  margin-bottom: 41px;
+
+}
+
+.right-content-text{
+
+  width: 960px;
+  height: auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+
+.more-button{
+
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-width: 3px;
+  border-color: #000000;
+  border-radius: 15px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.more-button:hover{
+
+  transform: scale(1.1);
+
+}
+
+.more-button-text{
+
+  font-family: 'Poppins-Medium';
+  font-size: 20px;
+  margin: 0;
+
+}
+
+.picture-main-1{
+
+  width: 866px;
+  height: 618.75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+
+/* CSS Deuxième Partie*/
+
+.second-Content-Container{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background-color: #303030;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.second-right-Container{
+
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+}
+
+.second-left-Container{
+
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.picture-main-2{
+
+  width: 810.83px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.text-2{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: 785px;
+  margin: 0;  
+  margin-bottom: 41px;
+  color: white;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.text-2-bis{
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: 785px;
+  margin: 0;  
+  margin-bottom: 41px;
+  color: white;
+  margin: 0;
+}
+
+.position-text-2{
+
+  width: 785px;
+  height: auto;
+
+}
+
+/* CSS Troisième Partie*/
+
+.third-content-container{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.third-left-container{
+
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.third-right-container{
+
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+}
+
+.main-card-actuality{
+
+  width: 690px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.picture-main-actuality{
+
+  width: 100%;
+  height: 413px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 9px;
+}
+
+.date-and-button-line{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+
+}
+
+.main-date-actuality{
+
+  font-family: 'Poppins-Light';
+  font-size: 22px;
+  color: black;
+  margin: 0;
+  margin-bottom: 9px;
+
+}
+
+.main-title-actuatity{
+
+  font-family: 'Poppins-Bold';
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 9px;
+
+}
+
+.main-desc-actuality{
+
+  font-family: 'Poppins-Regular';
+  font-size: 22px;
+  width: 690px;  
+  margin: 0;
+}
+
+.button-more-actuality{
+
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+
+}
+
+.button-more-actuality:hover{
+
+  background-color: #fff;
+  opacity: 0.7;
+
+}
+
+.old-card-actuality{
+
+  width: 795px;
+  height: 204px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+.info-old-actuality-container{
+
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 204px;
+  margin: 0;
+  margin-left: 15px;
+
+}
+
+.picture-old-actuality{
+
+  width: 340px;
+  height: 204px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.old-date-button-line{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 9px;
+  
+}
+
+.old-date-actuality{
+
+  font-family: 'Poppins-Light';
+  font-size: 20px;
+
+}
+
+.old-title-actuality{
+
+  font-family: 'Poppins-Bold';
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 9px;
+
+}
+
+.old-desc-actuality{
+
+  font-family: 'Poppins-Regular';
+  font-size: 20px;
+  width: 440px;
+  margin: 0;
+
+}
+
+.br{
+
+  height: 41px;
+
+}
+
+/* CSS Quatrième Partie*/
+
+.fourth-content-container{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background-color: #303030;
+  justify-content: right;
+  align-items: center;  
+
+}
+
+.fourth-left-container{
+
+  width: 893px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.fourth-right-container{
+
+  width: 907px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  
+}
+
+.title-text-4{
+
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: 893px;
+  margin: 0;
+  margin-bottom: 41px;
+  color: white;
+  margin: 0;
+  margin-bottom: 41px;
+
+}
+
+.picture-main-3{
+
+  width: 825px;
+  height: 619px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* CSS Cinquième Partie*/
+
+.fifth-content-container{
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background-color: white;
+  justify-content: start;
+  align-items: center;  
+
+}
+
+.fifth-left-container{
+
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.fifth-right-container{
+
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.picture-main-4{
+
+  width: 814px;
+  height: 576px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.title-text-5{
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: auto;
+  margin: 0;
+  margin-bottom: 41px;
+  color: black;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.text-5-france-titre{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: fit-content;
+  margin: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.text-5-france{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: 785px;
+  margin: 0;  
+  margin-bottom: 41px;
+
+}
+
+.text-5-benin-titre{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: fit-content;
+  margin: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+.text-5-benin{
+
+  font-family: 'Poppins-Medium';
+  font-size: 24px;
+  width: 785px;
+  margin: 0;  
+}
+
+/* CSS Sixième Partie*/
+
+.sixth-content-container{
+
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  width: auto;
+  background-color: #303030;
+  justify-content: center;
+  align-items: center;  
+
+}
+
+.partner-line{
+
+  width: 1680px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 41px;
+
+}
+
+.partner-card{
+
+  width: 820px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.partner-logo-title{
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120px;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+
+}
+
+.partner-logo{
+
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.partner-title{
+
+  font-size: 24px;
+  font-family: 'Poppins-SemiBold';
+
+}
+
+.partner-desc{
+
+  font-family: 'Poppins-Regular';
+  font-size: 24px;
+  color: #fff;
+  margin: 0px;
+  margin-top: 10px;
+
+}
+
+.title-text-6{
+  font-family: 'Poppins-SemiBold';
+  font-size: 48px;
+  width: 596px;
+  margin: 0;
+  margin-bottom: 41px;
+  color: white;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.partner-container{
+
+  width: 1680px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+}
+>>>>>>> Stashed changes

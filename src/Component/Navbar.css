@@ -1,0 +1,151 @@
+a {
+  color: inherit;
+}
+
+.navbar-container{
+  /* peu utile à voir pour y enlever */
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+  }
+    
+  .navbar-container.hidden {
+    transform: translateY(-100%);
+  }
+  
+  .navbar{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 1890px;
+    
+  }
+  
+  .title-navbar{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  
+  }
+  
+  h1{
+  
+    font-size: 30px;
+    font-family: Poppins-Bold;
+    margin: 0;
+  
+  }
+  
+  .point-style{
+  
+    font-size: 30px;
+    font-family: Poppins-Bold;
+    margin: 0;
+    margin-left: 1%;
+    color: #AD2A7A;  
+  
+  }
+  
+  .Container-Onglets{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 0; 
+  }
+
+  .button-page{
+  
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    border: 0;
+    align-items: center;  
+    margin-right: 45px;        
+    font-size: 20px;
+    font-family: 'Poppins-Medium';    
+    position: relative;
+    display: inline-block;  
+  
+  }
+
+  .button-page::after{ 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+  }
+    
+  .button-page:hover::after{
+
+    width: 100%;   
+
+  }
+
+  .active{    
+    
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .active:after{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+
+  }
+
+  .button-donation{
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: 'Poppins-Medium';
+    color: #fff;
+    background-color: #AD2A7A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .icon-don{
+
+    width: 25px;
+    height: 25px;
+    margin: 0;
+  }
+
+  .title-don{
+
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    text-decoration: none;
+
+  }      
