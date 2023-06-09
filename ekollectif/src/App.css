@@ -1,6 +1,5 @@
 
 /*---------- CSS Design ----------*/
-
 body{
   max-width: 1920px;
   display: flex;
@@ -23,6 +22,14 @@ body{
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.Main-Container{
+
+  width: 100%;
+  height: auto;
+  align-items: center;
+  
 }
 
 /* Common CSS */

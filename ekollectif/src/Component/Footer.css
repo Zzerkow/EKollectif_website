@@ -1,0 +1,185 @@
+/* Footer CSS */
+
+.footer{
+
+    height: 35.65vh;
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+      
+  }
+  
+  .footer-up-container{
+    height: auto;
+    width: 1680px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 60.3px;
+  }
+  
+  .footer-up-name{
+  
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .footer-up-logo{
+  
+    width: 162px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .footer-up-website-name{
+  
+    font-family: 'Poppins-SemiBold';
+    font-size: 48px;
+    margin: 0;
+  
+  }
+  
+  .footer-up-links{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0; 
+  
+  }
+  
+  .footer-up-links-span{
+  
+    font-family: 'Poppins-medium';
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .footer-up-social{
+  
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  
+  }
+  
+  .footer-up-social-title{
+  
+    font-family: 'Poppins-SemiBold';
+    font-size: 24px;
+    margin-bottom: 9px;
+  
+  }
+  
+  .footer-up-social-logo-mail{
+  
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 9px;
+  
+  }
+  
+  .footer-up-social-icon{
+  
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .footer-up-social-mail{
+  
+    font-family: 'Poppins-Medium';
+    font-size: 24px;
+    margin: 0;
+    margin-left: 22px;
+  
+  }
+  
+  .footer-up-social-network{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: auto;
+  }
+  
+  .footer-up-social-network-instagram{
+  
+    height: 40px;
+    width: 40px;
+    background-image: url(../Img/Instagram_Icon.png);
+    margin: 0;
+  }
+  
+  .footer-up-social-network-facebook{
+  
+    height: 40px;
+    width: 40px;
+    background-image: url(../Img/Facebook_Icon.png);
+    margin: 0;
+  }
+  
+  .footer-up-social-network-linkedin{
+  
+    height: 40px;
+    width: 40px;
+    background-image: url(../Img/Linkedin_Icon.png);
+    margin: 0;
+  }
+  
+  .footer-up-social-network-whatsapp{
+  
+    height: 40px;
+    width: 40px;
+    background-image: url(../Img/Whatsapp_Icon.png);
+    margin: 0;
+  }
+  
+  .footer-down{
+  
+    width: 1680px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  
+  }
+  
+  .footer-down-line{
+  
+    width: 1405px;
+    height: 1px;
+    background-color: #000000;
+    border: none;
+  
+  }
+  
+  .footer-down-copyright{
+  
+    font-family: 'Poppins-Medium';
+    font-size: 24px;
+  
+  }
